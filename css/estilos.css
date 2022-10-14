@@ -70,6 +70,7 @@ header {
     background-color: var(--tangerine);
     opacity: 90%;
     top: 0;
+    width: 100%;
 }
 
 .logo {
