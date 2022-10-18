@@ -226,10 +226,9 @@ p {
 }
 
 .sobrenosotros{
-    width: 50rem;
+    width: 45rem;
     height: 40rem;
 }
-
 
 /* PRODUCTOS */
 
@@ -329,13 +328,33 @@ p {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.mb-3{
+    width: 50rem;
+}
+
+.form-control{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.textarea{
+    text-align: start;
+}
+
+.form-check{
+    margin-top: 1rem;
 }
 
 .btn{
     width: 10rem;
     font-size: 2rem;
-    margin-top: 1rem;
+    margin-top: 4rem;
     background-color: var(--tangerine);
     border-color: black;
     color: black;
