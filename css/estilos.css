@@ -57,41 +57,29 @@ body {
 
 /* Inicio */
 
-header {
-    display: grid;
-    grid-template-columns: 0.5fr 6fr;
-    grid-template-areas: 
-    "logo nav";
-    justify-items: center;
-    align-items: center;
-    justify-content: space-evenly;
-    align-content: space-around;
-    position: sticky;
-    background-color: var(--tangerine);
-    opacity: 90%;
-    top: 0;
+.header{
     width: 100%;
 }
 
-.logo {
-    grid-area: logo;
-    justify-self: center;
-    align-self: center;
-    width: 150px;
-    height: 150px;
+.container-fluid{
+    background-color: var(--tangerine);
 }
 
-nav {
-    grid-area: nav;
-    justify-self: center;
-    align-self:flex-end;
-    margin-bottom: 0.5rem;
+.navbar{
+    padding: 0;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
 }
 
 li {
     display: inline-block;
     margin: 0 14rem;
     text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .nav__link:hover {
@@ -117,6 +105,15 @@ li:hover, .redes:hover, .mapa:hover {
     color: black;
     font-weight: bold;
     text-align: center;
+}
+
+.navbar-toggler{
+    width: 6rem;
+    height: 6rem;
+}
+
+.navbar-toggler-icon{
+    width: 3rem;
 }
 
 .presentacion {
@@ -300,7 +297,7 @@ p {
 .foto{
     justify-self: center;
     align-items: center;
-    margin: 1rem;
+    margin: 1.8rem 0;
     width: 29rem;
     height: 29rem;
     border: solid white 3px;
@@ -328,43 +325,23 @@ p {
 }
 
 .formulario{
-    text-align: center;
-    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-size: 2rem;
 }
 
-label{
-    display: block;
-    font-size: large;
-    font-weight: bold;
-    margin: 1rem 0;
-}
-
-.input__text{
-    width: 35rem;
-    height: 25rem;
-}
-
-input:hover{
-    border: solid black 2px;
-}
-
-.input__submit{
+.btn{
     width: 10rem;
-    height: 5rem;
-    border: solid black 2px;
-    border-radius: 0.5rem;
-    background-color:  white;
-    text-align: center;
-    font-weight: bold;
-    font-size: medium;
-}
-
-.input__submit:hover{
+    font-size: 2rem;
+    margin-top: 1rem;
     background-color: var(--tangerine);
-    transition: 0.5s;
+    border-color: black;
+    color: black;
 }
 
-.input__radio{
-    width: 2rem;
-    height: 2rem;
+.btn:hover{
+    background-color: var(--blue-green);
+    border: solid black 1px;
 }
