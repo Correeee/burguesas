@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,11 +51,11 @@
     </header>
     
     <main class="principal__producto">
-        <h2 class="titulo__menu">Menú</h2>
+        <h2 class="titulo__menu">MENÚ</h2>
 
         <section class="menu"> 
 
-            <div class="menu__producto">
+            <div class="menu__producto" data-aos="fade-right">
                 <img src="../multimedia/productos/menu-01.jpg" alt="producto" class="productoimg">
                     <div class="menu_texto">
                         <h3 class="titulo_producto">Cheeseburguer</h3>
@@ -62,7 +63,7 @@
                     </div>    
             </div>
 
-            <div class="menu__producto">
+            <div class="menu__producto" data-aos="fade-right">
                 <img src="../multimedia/productos/menu-02.jpg" alt="producto" class="productoimg">
                     <div class="menu_texto">
                         <h3 class="titulo_producto">Baconator</h3>
@@ -70,7 +71,7 @@
                     </div>    
             </div>
 
-            <div class="menu__producto">
+            <div class="menu__producto" data-aos="fade-right">
                 <img src="../multimedia/productos/menu-03.jpg" alt="producto" class="productoimg">
                     <div class="menu_texto">
                         <h3 class="titulo_producto">Baconator Doble</h3>
@@ -78,7 +79,7 @@
                     </div>    
             </div>
 
-            <div class="menu__producto">
+            <div class="menu__producto" data-aos="fade-right">
                 <img src="../multimedia/productos/menu-04.jpg" alt="producto" class="productoimg">
                     <div class="menu_texto">
                         <h3 class="titulo_producto">Baconator Triple</h3>
@@ -86,7 +87,7 @@
                     </div>    
             </div>
 
-            <div class="menu__producto">
+            <div class="menu__producto" data-aos="fade-right">
                 <img src="../multimedia/productos/menu-05.jpg" alt="producto" class="productoimg">
                     <div class="menu_texto">
                         <h3 class="titulo_producto">Little-Assasin Burger</h3>
@@ -94,15 +95,15 @@
                     </div>    
             </div>
 
-            <div class="menu__producto">
+            <div class="menu__producto" data-aos="fade-right">
                 <img src="../multimedia/productos/menu-06.jpg" alt="producto" class="productoimg">
                     <div class="menu_texto">
-                        <h3 class="titulo_producto">Major-Assasin Burger</h3>
+                        <h3 class="titulo_producto">Major-Assasin Burger</h3>down
                         <p class="descripcion_producto">Quíntuple (x5) hamburguesa con queso emmental, sobre pan de papa enmantecado y tostado. Incluye nuestra famosa salsa de cebolla caramelizada y vino.</p> 
                     </div>    
             </div>
 
-            <div class="menu__producto">
+            <div class="menu__producto" data-aos="fade-right">
                 <img src="../multimedia/productos/menu-07.jpg" alt="producto" class="productoimg">
                     <div class="menu_texto">
                         <h3 class="titulo_producto">Doble cheese</h3>
@@ -110,7 +111,7 @@
                     </div>    
             </div>
 
-            <div class="menu__producto">
+            <div class="menu__producto" data-aos="fade-right">
                 <img src="../multimedia/productos/menu-08.jpg" alt="producto" class="productoimg">
                     <div class="menu_texto">
                         <h3 class="titulo_producto">Sweet Onion burger</h3>
@@ -118,7 +119,7 @@
                     </div>    
             </div>
 
-            <div class="menu__producto">
+            <div class="menu__producto" data-aos="fade-right">
                 <img src="../multimedia/productos/menu-09.jpg" alt="producto" class="productoimg">
                     <div class="menu_texto">
                         <h3 class="titulo_producto">Eggs Burger</h3>
@@ -126,7 +127,7 @@
                     </div>    
             </div>
 
-            <div class="menu__producto">
+            <div class="menu__producto" data-aos="fade-right">
                 <img src="../multimedia/productos/menu-10.jpg" alt="producto" class="productoimg">
                     <div class="menu_texto">
                         <h3 class="titulo_producto">Eggs Burger 2</h3>
@@ -150,5 +151,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 </html>
