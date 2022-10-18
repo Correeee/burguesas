@@ -88,10 +88,6 @@ li {
     font-weight: bold;
 }
 
-.collapse{
-
-}
-
 .nav__iconos {
     width: 5rem;
     display: block;
@@ -229,6 +225,10 @@ p {
     margin-bottom: 2.5rem;
 }
 
+.titulo__producto{
+    font-weight: bold;
+}
+
 .menu__producto{
     display: inline-block;
     text-align: center;
@@ -280,6 +280,7 @@ p {
     align-items: center;
     justify-content: space-evenly;
     align-content: space-around;
+    margin-bottom: 1rem;
 }
 
 .foto{
@@ -349,6 +350,7 @@ p {
     border-color: black;
     color: black;
     font-weight: bold;
+    transition: 0.6s;
 }
 
 .btn:hover{
@@ -361,7 +363,17 @@ p {
 }
 
 h2{
-    animation: h2 4s infinite;
+    animation: h2 1.5s infinite linear;
+    animation-direction:alternate;
+}
+
+@keyframes h2 {
+    from{
+        transform: rotate(14deg);
+    }
+    to{
+        transform: rotate(-14deg);
+    }
 }
 
 .div__contacto{
