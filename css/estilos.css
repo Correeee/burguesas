@@ -113,7 +113,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 80vh;
+    height: 75vh;
     width: 100vw;
 }
 
@@ -193,6 +193,7 @@ footer{
 .sobrenosotros{
     border: solid white 4px;
     object-fit:cover;
+    margin-bottom: 1rem;
 }
 
 .titulo__nosotros {
@@ -200,10 +201,10 @@ footer{
     font-weight: bold;
     text-align: center;
     margin-top: 0rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
 }
 
-p {
+p{
     font-size: 2rem;
     font-weight:200;
     margin-top: 0rem;
