@@ -66,12 +66,15 @@ body {
     width: 100%;
 }
 
-.collapse, .nav-bar{
-    width: 100%;
-}
-
 .navbar{
     padding: 0;
+}
+
+.navbar-nav{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -81,8 +84,7 @@ body {
 }
 
 li {
-    display: inline-block;
-    margin: 0 13rem;
+    margin: 0 12rem;
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
@@ -179,7 +181,7 @@ footer{
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    margin-top: 12.7rem;
+    margin-top: 13rem;
 }
 
 .div__textonosotros{
@@ -385,3 +387,8 @@ h2{
     font-weight: bold;
 }
 
+/* MEDIA */
+
+@media screen and(min-width: 1200px);
+    
+}
