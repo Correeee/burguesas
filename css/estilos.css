@@ -187,9 +187,6 @@ footer{
     width: 40%;
 }
 
-/*.div__imagennosotros{
-}*/
-
 .sobrenosotros{
     border: solid white 4px;
     object-fit:cover;
@@ -207,7 +204,6 @@ footer{
 p{
     font-size: 2rem;
     font-weight:200;
-    margin-top: 0rem;
     margin-bottom: 2.5rem;
 }
 
@@ -229,6 +225,7 @@ p{
 .titulo__producto{
     font-weight: bold;
 }
+
 
 .menu__producto{
     display: inline-block;
@@ -289,8 +286,8 @@ p{
     justify-self: center;
     align-items: center;
     margin: 1.8rem 0;
-    width: 29rem;
-    height: 29rem;
+    width: 26rem;
+    height: 26rem;
     border: solid white 3px;
 }
 
@@ -320,7 +317,7 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 9rem;
+    margin: 8rem;
 }
 
 .formulario{
@@ -331,6 +328,7 @@ p{
     justify-items: center;
     align-items: center;
     margin-bottom: 3rem;
+    margin-right: 2rem;
 }
 
 .mb-3{
