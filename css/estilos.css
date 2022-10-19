@@ -557,6 +557,14 @@ h2{
     width: 95%;
 }
 
+/* menu */
+.menu_texto{
+    margin-bottom: 1rem;
+    margin-top: 0;
+    width: 95%;
+}
+
+
 /* contacto */
 
 .formulario{
@@ -565,11 +573,15 @@ h2{
 }
 
 .mb-3{
-    width: 45rem;
+    width: 40rem;
 }
 
 .mapa__imagen{
-    width: 45rem;
+    width: 40rem;
+}
+
+.form-check-label{
+    font-size: large;
 }
 
 /* footer */
