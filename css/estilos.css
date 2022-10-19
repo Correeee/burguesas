@@ -531,11 +531,11 @@ h2{
 @media screen and (max-width: 500px){
     .wsp{
         bottom: 10%;
-        left: 88%;
+        left: 87%;
         text-align: center;
     }
     .wsp__texto{
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
     .wsp__img{
         width: 5rem;
@@ -573,7 +573,7 @@ h2{
 }
 
 .redes, .mapa {
-    width: 3rem;
+    width: 2.8rem;
 }
 
 .copyright{
