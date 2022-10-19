@@ -282,6 +282,7 @@ p{
     justify-content: space-evenly;
     align-content: space-around;
     margin-bottom: 1rem;
+    gap: 1rem;
 }
 
 .foto{
@@ -314,15 +315,22 @@ p{
     margin-bottom: 2.5rem;
 }
 
+.div__contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 9rem;
+}
+
 .formulario{
     display: flex;
     flex-direction: column;
+    font-size: 2.5rem;
+    text-align: center;
     justify-items: center;
     align-items: center;
-    font-size: 2.5rem;
-    margin-top: 8rem;
-    text-align: center;
-    grid-area: formulario;
+    margin-bottom: 3rem;
 }
 
 .mb-3{
@@ -359,10 +367,6 @@ p{
     border: solid black 1px;
 }
 
-.insert__mapa{
-    display: flex;
-}
-
 h2{
     animation: h2 1.5s infinite linear;
     animation-direction:alternate;
@@ -377,23 +381,9 @@ h2{
     }
 }
 
-.div__contacto{
-    display: grid;
-    grid-template-columns: 2 1fr;
-    grid-template-areas: 
-    "formulario mapa__insert";
-    justify-items: center;
-    align-items: center;
-}
-
-.mapa__insert{
-    grid-area: mapa__insert;
-}
-
 .mapa__inserttitulo{
     text-align: center;
     font-size: large;
     font-weight: bold;
-    margin-bottom: 1rem;
 }
 
