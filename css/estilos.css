@@ -215,7 +215,6 @@ p{
     margin-bottom: 2.5rem;
 }
 
-
 /* PRODUCTOS */
 
 .titulo__menu{
@@ -508,8 +507,12 @@ h2{
         width: 50rem;
         height: 30rem;
     }
-/* menu */
 
+    .div__textonosotros{
+        text-align: center;
+        width: 95%;
+    }
+/* menu */
 
 /* galeria */
 
@@ -545,8 +548,13 @@ h2{
 /* nosotros */
 
 .sobrenosotros{
-    width: 45rem;
+    width: 40rem;
     height: 30rem;
+}
+
+.div__textonosotros{
+    text-align: start;
+    width: 95%;
 }
 
 /* contacto */
@@ -580,4 +588,5 @@ h2{
     text-align: center;
     font-size: small;
 }
+
 }
