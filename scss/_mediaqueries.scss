@@ -1,0 +1,209 @@
+/* --MEDIAQUERIES-- */
+
+/* LAPTOP L */
+
+@media screen and (max-width: 1440px){
+    li{
+        margin: 0 8rem;
+    }
+    .div__contacto{
+        margin-bottom: 2rem;
+    }
+    /* menu */
+    .menu__producto{
+        display: inline-block;
+        text-align: center;
+        width: 70rem;
+        margin: 4rem 0rem;
+    }
+    .productoimg{
+        width: 25rem;
+        height: 25rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* LAPTOP */
+
+@media screen and (max-width: 1024px){
+/* wsp */
+    .wsp{
+        bottom: 10%;
+        left: 88%;
+        text-align: center;
+    }
+    .wsp__texto{
+        font-size: 1.1rem;
+    }
+    .wsp__img{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    li{
+        margin: 0 4rem;
+    }
+ /* menu */
+    .productoimg{
+        margin-bottom: 1rem;}
+
+/* galeria */
+    .galeria{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .foto{
+        width: 21rem;
+        height: 21rem;
+    }
+
+/* menu */
+    .menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .menu__producto, .descripcion_producto{
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+    .titulo__producto{
+        margin-top: 1rem;
+    }
+    .principal__nosotros{
+        margin-top: 3rem;
+    }
+
+    .productoimg{
+        margin: 1rem 0;
+    }
+
+    .div__contacto{
+        margin-top: 6rem;
+    }
+}
+
+
+/* TABLET */
+
+@media screen and (max-width: 768px){
+    .wsp{
+        bottom: 10%;
+        left: 90%;
+        text-align: center;
+    }
+    .wsp__texto{
+        font-size: 1.1rem;
+    }
+    .wsp__img{
+        width: 5rem;
+        height: 5rem;
+    }
+/* nosotros */
+    .principal__nosotros{
+        flex-direction:column;
+        margin-top: 4rem;
+    }
+    .sobrenosotros{
+        width: 50rem;
+        height: 30rem;
+    }
+
+    .div__textonosotros{
+        text-align: center;
+        width: 95%;
+    }
+/* menu */
+
+/* galeria */
+
+    .galeria{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+/* contacto */
+    .div__contacto{
+    margin-top: 6rem;
+    }
+}
+
+/* CELULAR */
+
+@media screen and (max-width: 500px){
+    .wsp{
+        bottom: 10%;
+        left: 85%;
+        text-align: center;
+    }
+    .wsp__texto{
+        font-size: 0.8rem;
+    }
+    .wsp__img{
+        width: 5rem;
+        height: 5rem;
+    }
+    
+
+/* nosotros */
+
+    .sobrenosotros{
+        width: 36rem;
+        height: 26rem;
+    }
+
+    .div__textonosotros{
+        text-align: center;
+        width: 95%;
+    }
+
+/* menu */
+    .menu_texto{
+        margin-bottom: 1rem;
+        margin-top: 0;
+        width: 95%;
+    }
+
+/* contacto */
+
+    .formulario{
+        margin-bottom: 5rem;
+        margin-right: 0rem;
+    }
+
+    .mb-3{
+        width: 35rem;
+    }
+
+    .mapa__imagen{
+        width: 35rem;
+    }
+
+    .form-check-label{
+        font-size: large;
+    }
+
+/* footer */
+
+    .titulomapa, .tituloredes {
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .redes, .mapa {
+        width: 2.5rem;
+    }
+
+    .copyright{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+}

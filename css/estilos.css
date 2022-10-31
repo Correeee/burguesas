@@ -110,6 +110,8 @@ li {
     width: 3rem;
 }
 
+/* INICIO */
+
 .carousel{
     display: flex;
     flex-direction: column;
@@ -133,6 +135,8 @@ li {
     height: 60rem;
     object-fit: contain;
 }
+
+/* FOOTER */
 
 footer{
     display: flex;
@@ -346,10 +350,8 @@ p{
 
 .textarea{
     text-align: start;
-}
-
-.form-check{
-    margin-top: 1rem;
+    overflow:auto;
+    resize:none;
 }
 
 .btn{
@@ -388,10 +390,6 @@ h2{
     font-weight: bold;
 }
 
-.textarea{
-    overflow:auto;
-    resize:none;
-}
 
 /* --MEDIAQUERIES-- */
 
@@ -415,6 +413,7 @@ h2{
         width: 25rem;
         height: 25rem;
         margin-bottom: 1rem;
+    }
 }
 
 /* LAPTOP */
@@ -544,6 +543,7 @@ h2{
         width: 5rem;
         height: 5rem;
     }
+    
 
 /* nosotros */
 
@@ -599,5 +599,4 @@ h2{
         text-align: center;
         font-size: 1.1rem;
     }
-
-}  
+}
