@@ -1,22 +1,41 @@
 /* LAPTOP L */
 
 @media screen and (max-width: 1440px){
-    li{
-        margin: 0 7rem;
+
+    .wsp{
+        left: 87%;
     }
-    .div__contacto{
-        margin-bottom: 2rem;
+
+    .navbar{
+        .container-fluid{
+            .collapse{
+                .navbar-nav{
+                    li{
+                        margin: 0 8rem;
+                    }
+                }
+            }
+        }
     }
-    /* menu */
-    .menu__producto{
-        display: inline-block;
-        text-align: center;
-        width: 70rem;
-        margin: 4rem 0rem;
-        .productoimg{
-            width: 25rem;
-            height: 25rem;
-            margin-bottom: 1rem;
+
+    .principal__contacto{
+        .div__contacto{
+            margin-bottom: 2rem;
+        }
+    }
+    
+
+    .menu{
+        .menu__producto{
+            display: inline-block;
+            text-align: center;
+            width: 70rem;
+            margin: 4rem 0rem;
+            .productoimg{
+                width: 25rem;
+                height: 25rem;
+                margin-bottom: 1rem;
+            }
         }
     }
 }
@@ -24,7 +43,6 @@
 /* LAPTOP */
 
 @media screen and (max-width: 1024px){
-/* wsp */
     .wsp{
         bottom: 10%;
         left: 88%;
@@ -38,14 +56,28 @@
         }
     }
 
-    li{
-        margin: 0 4rem;
-    }
- /* menu */
-    .productoimg{
-        margin-bottom: 1rem;}
 
-/* galeria */
+    .navbar{
+        .container-fluid{
+            .collapse{
+                .navbar-nav{
+                    li{
+                        margin: 0 4rem;
+                    }
+                }
+            }
+        }
+    }
+
+ /* menu */
+
+    .menu{
+        .menu__producto{
+            .productoimg{
+                margin-bottom: 1rem;}
+        }
+    }
+
     .galeria{
         display: flex;
         flex-direction: row;
@@ -57,36 +89,40 @@
         }
     }
 
-/* menu */
-    .menu{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        .menu_producto{
-            margin-bottom: 1rem;
-            margin-top: 0;
-            .productoimg{
-                margin: 1rem 0;
+
+    .principal__producto{
+        margin-top: 3rem;
+        .menu{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .menu__producto{
+                margin-bottom: 1rem;
+                margin-top: 0;
+                .productoimg{
+                    margin: 1rem 0;
+                }
+                .menu_texto{
+                    .titulo__producto{
+                        margin-top: 1rem;
+                    }
+                    .descripcion_producto{
+                        margin-bottom: 1rem;
+                        margin-top: 0;
+                    }
+                }
             }
         }
-        .titulo__producto{
-            margin-top: 1rem;
-        }
-        .descripcion_producto{
-            margin-bottom: 1rem;
-            margin-top: 0;
-        }
     }
 
-    .principal__nosotros{
-        margin-top: 3rem;
-    }
-
-    .div__contacto{
-        margin-top: 6rem;
+    .principal__contacto{
+        .div__contacto{
+            margin-top: 6rem;
+        }
     }
 }
+
 
 /* TABLET */
 
@@ -104,20 +140,21 @@
         }
     }
 
-
 /* nosotros */
     .principal__nosotros{
         flex-direction:column;
         margin-top: 4rem;
-        .div__textonosotros{
-            text-align: center;
-            width: 95%;
-        }
-        .sobrenosotros{
-            width: 50rem;
-            height: 30rem;
-        }
     }
+    .sobrenosotros{
+        width: 50rem;
+        height: 30rem;
+    }
+
+    .div__textonosotros{
+        text-align: center;
+        width: 95%;
+    }
+/* menu */
 
 /* galeria */
 
@@ -148,70 +185,83 @@
             width: 5rem;
             height: 5rem;
         }
-        
     }
 
-/* nosotros */
-
-    .sobrenosotros{
-        width: 36rem;
-        height: 26rem;
-    }
-
-    .div__textonosotros{
-        text-align: center;
-        width: 95%;
+    .principal__nosotros{
+        .div__textonosotros{
+            text-align: center;
+            width: 95%;
+        }
+        .div__imagennosotros{
+            .sobrenosotros{
+                width: 36rem;
+                height: 26rem;
+            }
+        }
     }
 
 /* menu */
-    .menu_texto{
-        margin-bottom: 1rem;
-        margin-top: 0;
-        width: 95%;
+
+    .menu{
+        .menu__producto{
+            .menu_texto{
+                margin-bottom: 1rem;
+                margin-top: 0;
+                width: 95%;
+            }
+        }
     }
 
 /* contacto */
 
-    .formulario{
-        margin-bottom: 5rem;
-        margin-right: 0rem;
-        .mb-3{
-            width: 35rem;
+    .principal__contacto{
+        .div__contacto{
+            .formulario{
+                margin-bottom: 5rem;
+                margin-right: 0rem;
+                .mb-3{
+                    width: 35rem;
+                }
+                .form-check{
+                    .form-check-label{
+                        font-size: large;
+                    }
+                }
+            }
+            .mapa__insert{
+                .mapa__imagen{
+                    width: 35rem;
+                }
+            }
         }
-    }
-
-    .mapa__imagen{
-        width: 35rem;
-    }
-
-    .form-check-label{
-        font-size: large;
     }
 
 /* footer */
 
-    .titulomapa{
-        font-size: 1.1rem;
-        font-weight: bold;
-        text-align: center;
-    }
-    
-    .tituloredes {
-        font-size: 1.1rem;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .redes{
-        width: 2.5rem;
-    }
-    
-    .mapa {
-        width: 2.5rem;
-    }
-
-    .copyright{
-        text-align: center;
-        font-size: 1.1rem;
+    .footer{
+        .div__ubicacion{
+            .mapa {
+                width: 2.5rem;
+            }
+            .titulomapa {
+                font-size: 1.1rem;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+        .div__redes{
+            .redes {
+                width: 2.5rem;
+            }
+            .tituloredes {
+                font-size: 1.1rem;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+        .copyright{
+            text-align: center;
+            font-size: 1.1rem;
+        }
     }
 }

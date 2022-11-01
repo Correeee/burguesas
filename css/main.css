@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* VAR COLORES*/
 html {
   font-size: 62.5%; }
@@ -42,8 +41,7 @@ body {
       transition: 0.5s;
       color: red; }
 
-/* HEADER - Hice el nesting así porque al parecer, al ser de bootstrap cuando lo anidas no toma todo perfectamente. 
-Me rompía el nav si lo anidaba bien.*/
+/* HEADER */
 .header {
   width: 100%; }
 
@@ -61,27 +59,24 @@ Me rompía el nav si lo anidaba bien.*/
       height: 6rem; }
       .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
         width: 3rem; }
-
-.navbar-nav {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; }
-
-li {
-  margin: 0 12rem;
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: bold; }
-  li .nav__iconos {
-    width: 5rem;
-    display: block;
-    margin: auto auto; }
-
-.nav-link:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.1);
-  transition: 0.5s; }
+    .navbar .container-fluid .navbar-collapse .navbar-nav {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .navbar .container-fluid .navbar-collapse .navbar-nav li {
+        margin: 0 12rem;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold; }
+        .navbar .container-fluid .navbar-collapse .navbar-nav li .nav-link:hover {
+          -webkit-transform: scale(1.3);
+          transform: scale(1.1);
+          transition: 0.5s; }
+        .navbar .container-fluid .navbar-collapse .navbar-nav li .nav-link .nav__iconos {
+          width: 5rem;
+          display: block;
+          margin: auto auto; }
 
 /* INICIO */
 .carousel {
@@ -91,7 +86,10 @@ li {
   align-content: center;
   height: 75vh;
   width: 100vw; }
-  .carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+  .carousel .carousel-control-next-icon {
+    width: 5rem;
+    height: 5rem; }
+  .carousel .carousel-control-prev-icon {
     width: 5rem;
     height: 5rem; }
   .carousel .visually-hidden {
@@ -174,21 +172,19 @@ footer {
     height: 40rem; }
 
 /* PRODUCTOS */
-.titulo__menu {
+.principal__producto .titulo__menu {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 2.5rem; }
 
-.menu__producto {
+.principal__producto .menu .menu__producto {
   display: inline-block;
   text-align: center;
   width: 80rem;
   margin: 4rem 7rem; }
-  .menu__producto .titulo__producto {
-    font-weight: bold; }
-  .menu__producto .productoimg {
+  .principal__producto .menu .menu__producto .productoimg {
     width: 24rem;
     height: 24rem;
     margin-right: 3rem;
@@ -196,27 +192,28 @@ footer {
     object-fit: cover;
     object-position: bottom;
     border: solid white 3px; }
-  .menu__producto .menu_texto {
+  .principal__producto .menu .menu__producto .menu_texto {
     display: inline-block;
     text-align: center;
     width: 48rem; }
-    .menu__producto .menu_texto .titulo_producto {
+    .principal__producto .menu .menu__producto .menu_texto .titulo__producto {
+      font-weight: bold;
       font-size: 2rem;
       text-align: center;
       margin-top: 2rem;
       margin-bottom: 2.5rem; }
-    .menu__producto .menu_texto .descripcion_producto {
+    .principal__producto .menu .menu__producto .menu_texto .descripcion_producto {
       font-size: large; }
 
 /* GALERIA */
-.titulo__galeria {
+.principal__galeria .titulo__galeria {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 2rem; }
 
-.galeria {
+.principal__galeria .galeria {
   display: grid;
   grid-template-columns: 4 1fr;
   grid-template-rows: 2 1fr;
@@ -227,36 +224,38 @@ footer {
   align-content: space-around;
   margin-bottom: 1rem;
   gap: 1rem; }
-  .galeria .foto {
+  .principal__galeria .galeria .foto {
     justify-self: center;
     align-items: center;
     margin: 1.8rem 0;
     width: 26rem;
     height: 26rem;
     border: solid white 3px; }
-    .galeria .foto:hover {
+    .principal__galeria .galeria .foto:hover {
       transform: scale(1.2); }
-    .galeria .foto img {
+    .principal__galeria .galeria .foto img {
       text-align: center;
       width: 100%;
       height: 100%;
       object-fit: cover; }
 
 /* CONTACTO */
-.titulo__contacto {
+.principal__contacto .titulo__contacto {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
   margin-top: 3rem;
-  margin-bottom: 2.5rem; }
+  margin-bottom: 2.5rem;
+  animation: h2 1.5s infinite linear;
+  animation-direction: alternate; }
 
-.div__contacto {
+.principal__contacto .div__contacto {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 8rem; }
-  .div__contacto .formulario {
+  .principal__contacto .div__contacto .formulario {
     display: flex;
     flex-direction: column;
     font-size: 2.5rem;
@@ -265,17 +264,17 @@ footer {
     align-items: center;
     margin-bottom: 3rem;
     margin-right: 2rem; }
-    .div__contacto .formulario .mb-3 {
+    .principal__contacto .div__contacto .formulario .mb-3 {
       width: 50rem; }
-      .div__contacto .formulario .mb-3 .form-control {
+      .principal__contacto .div__contacto .formulario .mb-3 .form-control {
         font-size: large;
         font-weight: bold;
         text-align: center; }
-      .div__contacto .formulario .mb-3 .textarea {
+      .principal__contacto .div__contacto .formulario .mb-3 .textarea {
         text-align: start;
         overflow: auto;
         resize: none; }
-    .div__contacto .formulario .btn {
+    .principal__contacto .div__contacto .formulario .btn {
       width: 10rem;
       font-size: 2rem;
       margin-top: 4rem;
@@ -284,13 +283,9 @@ footer {
       color: black;
       font-weight: bold;
       transition: 0.6s; }
-      .div__contacto .formulario .btn:hover {
+      .principal__contacto .div__contacto .formulario .btn:hover {
         background-color: #219ebcff;
         border: solid black 1px; }
-
-h2 {
-  animation: h2 1.5s infinite linear;
-  animation-direction: alternate; }
 
 @keyframes h2 {
   from {
@@ -298,31 +293,26 @@ h2 {
   to {
     transform: rotate(-14deg); } }
 
-.mapa__inserttitulo {
-  text-align: center;
-  font-size: large;
-  font-weight: bold; }
-
 /* LAPTOP L */
 @media screen and (max-width: 1440px) {
-  li {
-    margin: 0 7rem; }
-  .div__contacto {
+  .wsp {
+    left: 87%; }
+  .navbar .container-fluid .collapse .navbar-nav li {
+    margin: 0 8rem; }
+  .principal__contacto .div__contacto {
     margin-bottom: 2rem; }
-  /* menu */
-  .menu__producto {
+  .menu .menu__producto {
     display: inline-block;
     text-align: center;
     width: 70rem;
     margin: 4rem 0rem; }
-    .menu__producto .productoimg {
+    .menu .menu__producto .productoimg {
       width: 25rem;
       height: 25rem;
       margin-bottom: 1rem; } }
 
 /* LAPTOP */
 @media screen and (max-width: 1024px) {
-  /* wsp */
   .wsp {
     bottom: 10%;
     left: 88%;
@@ -332,12 +322,11 @@ h2 {
     .wsp .wsp__img {
       width: 6rem;
       height: 6rem; }
-  li {
+  .navbar .container-fluid .collapse .navbar-nav li {
     margin: 0 4rem; }
   /* menu */
-  .productoimg {
+  .menu .menu__producto .productoimg {
     margin-bottom: 1rem; }
-  /* galeria */
   .galeria {
     display: flex;
     flex-direction: row;
@@ -346,25 +335,24 @@ h2 {
     .galeria .foto {
       width: 21rem;
       height: 21rem; }
-  /* menu */
-  .menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly; }
-    .menu .menu_producto {
-      margin-bottom: 1rem;
-      margin-top: 0; }
-      .menu .menu_producto .productoimg {
-        margin: 1rem 0; }
-    .menu .titulo__producto {
-      margin-top: 1rem; }
-    .menu .descripcion_producto {
-      margin-bottom: 1rem;
-      margin-top: 0; }
-  .principal__nosotros {
+  .principal__producto {
     margin-top: 3rem; }
-  .div__contacto {
+    .principal__producto .menu {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      .principal__producto .menu .menu__producto {
+        margin-bottom: 1rem;
+        margin-top: 0; }
+        .principal__producto .menu .menu__producto .productoimg {
+          margin: 1rem 0; }
+        .principal__producto .menu .menu__producto .menu_texto .titulo__producto {
+          margin-top: 1rem; }
+        .principal__producto .menu .menu__producto .menu_texto .descripcion_producto {
+          margin-bottom: 1rem;
+          margin-top: 0; }
+  .principal__contacto .div__contacto {
     margin-top: 6rem; } }
 
 /* TABLET */
@@ -382,12 +370,13 @@ h2 {
   .principal__nosotros {
     flex-direction: column;
     margin-top: 4rem; }
-    .principal__nosotros .div__textonosotros {
-      text-align: center;
-      width: 95%; }
-    .principal__nosotros .sobrenosotros {
-      width: 50rem;
-      height: 30rem; }
+  .sobrenosotros {
+    width: 50rem;
+    height: 30rem; }
+  .div__textonosotros {
+    text-align: center;
+    width: 95%; }
+  /* menu */
   /* galeria */
   .galeria {
     display: flex;
@@ -409,41 +398,40 @@ h2 {
     .wsp .wsp__img {
       width: 5rem;
       height: 5rem; }
-  /* nosotros */
-  .sobrenosotros {
-    width: 36rem;
-    height: 26rem; }
-  .div__textonosotros {
+  .principal__nosotros .div__textonosotros {
     text-align: center;
     width: 95%; }
+  .principal__nosotros .div__imagennosotros .sobrenosotros {
+    width: 36rem;
+    height: 26rem; }
   /* menu */
-  .menu_texto {
+  .menu .menu__producto .menu_texto {
     margin-bottom: 1rem;
     margin-top: 0;
     width: 95%; }
   /* contacto */
-  .formulario {
+  .principal__contacto .div__contacto .formulario {
     margin-bottom: 5rem;
     margin-right: 0rem; }
-    .formulario .mb-3 {
+    .principal__contacto .div__contacto .formulario .mb-3 {
       width: 35rem; }
-  .mapa__imagen {
+    .principal__contacto .div__contacto .formulario .form-check .form-check-label {
+      font-size: large; }
+  .principal__contacto .div__contacto .mapa__insert .mapa__imagen {
     width: 35rem; }
-  .form-check-label {
-    font-size: large; }
   /* footer */
-  .titulomapa {
+  .footer .div__ubicacion .mapa {
+    width: 2.5rem; }
+  .footer .div__ubicacion .titulomapa {
     font-size: 1.1rem;
     font-weight: bold;
     text-align: center; }
-  .tituloredes {
+  .footer .div__redes .redes {
+    width: 2.5rem; }
+  .footer .div__redes .tituloredes {
     font-size: 1.1rem;
     font-weight: bold;
     text-align: center; }
-  .redes {
-    width: 2.5rem; }
-  .mapa {
-    width: 2.5rem; }
-  .copyright {
+  .footer .copyright {
     text-align: center;
     font-size: 1.1rem; } }
