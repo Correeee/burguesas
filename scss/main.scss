@@ -53,7 +53,7 @@ body {
     }
 }
 
-/* HEADER */
+/* HEADER (Si pongo la anidacion del .navbar en el header: se rompe el nav. */
 
 .header{
     width: 100%;
@@ -327,6 +327,13 @@ footer{
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin: 8rem;
+        .mapa__insert{
+            .mapa__inserttitulo{
+                text-align: center;
+                font-size: large;
+                font-weight: bold;
+            }
+        }
         .formulario{
             display: flex;
             flex-direction: column;
