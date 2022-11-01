@@ -20,6 +20,9 @@ body {
   bottom: 10%;
   left: 90%;
   z-index: 1000; }
+  .wsp:hover {
+    opacity: 100%;
+    transition: 0.5s; }
   .wsp .wsp__texto {
     text-align: center;
     text-decoration: none;
@@ -36,10 +39,6 @@ body {
     margin-top: 0.3rem;
     width: 7rem;
     height: 7rem; }
-    .wsp .wsp__img:hover {
-      opacity: 100%;
-      transition: 0.5s;
-      color: red; }
 
 /* HEADER (Si pongo la anidacion del .navbar en el header: se rompe el nav. */
 .header {
@@ -159,7 +158,9 @@ footer {
       font-weight: bold;
       text-align: center;
       margin-top: 0rem;
-      margin-bottom: 3rem; }
+      margin-bottom: 3rem;
+      animation: h2 1.5s infinite linear;
+      animation-direction: alternate; }
     .principal__nosotros .div__textonosotros p {
       font-size: 2rem;
       font-weight: 200;
@@ -177,7 +178,9 @@ footer {
   font-weight: bold;
   text-align: center;
   margin-top: 3rem;
-  margin-bottom: 2.5rem; }
+  margin-bottom: 2.5rem;
+  animation: h2 1.5s infinite linear;
+  animation-direction: alternate; }
 
 .principal__producto .menu .menu__producto {
   display: inline-block;
@@ -211,7 +214,9 @@ footer {
   font-weight: bold;
   text-align: center;
   margin-top: 3rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  animation: h2 1.5s infinite linear;
+  animation-direction: alternate; }
 
 .principal__galeria .galeria {
   display: grid;

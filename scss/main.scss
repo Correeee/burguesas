@@ -26,7 +26,11 @@ body {
     position: fixed;
     bottom: 10%;
     left: 90%;
-    z-index: 1000; 
+    z-index: 1000;
+    &:hover{
+        opacity: 100%;
+        transition: 0.5s;
+    } 
     .wsp__texto{
         text-align: center;
         text-decoration: none;
@@ -45,11 +49,6 @@ body {
         margin-top: 0.3rem;
         width: 7rem;
         height: 7rem;
-        &:hover{
-            opacity: 100%;
-            transition: 0.5s;
-            color: red;
-        }
     }
 }
 
@@ -205,6 +204,8 @@ footer{
             text-align: center;
             margin-top: 0rem;
             margin-bottom: 3rem;
+            animation: h2 1.5s infinite linear;
+            animation-direction:alternate
         }
         p{
             font-size: 2rem;
@@ -230,6 +231,8 @@ footer{
         text-align: center;
         margin-top: 3rem;
         margin-bottom: 2.5rem;
+        animation: h2 1.5s infinite linear;
+        animation-direction:alternate
     }
     .menu{
         .menu__producto{
@@ -275,6 +278,8 @@ footer{
         text-align: center;
         margin-top: 3rem;
         margin-bottom: 2rem;
+        animation: h2 1.5s infinite linear;
+        animation-direction:alternate
     }
     .galeria{
         display: grid;
