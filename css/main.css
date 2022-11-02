@@ -77,6 +77,7 @@ header {
 .carousel {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-content: center;
   height: 75vh;
@@ -98,6 +99,7 @@ header {
 footer {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -139,11 +141,11 @@ footer {
 .principal__nosotros {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: center;
   justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
   text-align: center;
   margin-top: 13rem; }
   .principal__nosotros .div__textonosotros {
@@ -260,9 +262,13 @@ footer {
     text-align: center;
     font-size: large;
     font-weight: bold; }
+  .principal__contacto .div__contacto .mapa__insert .mapa__imagen {
+    width: 50rem;
+    height: 35rem; }
   .principal__contacto .div__contacto .formulario {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     font-size: 2.5rem;
     text-align: center;
     justify-items: center;
@@ -361,7 +367,9 @@ footer {
           margin-bottom: 1rem;
           margin-top: 0; }
   .principal__contacto .div__contacto {
-    margin-top: 6rem; } }
+    margin-top: 6rem; }
+    .principal__contacto .div__contacto .formulario {
+      margin-right: 0rem; } }
 
 /* TABLET */
 @media screen and (max-width: 500px) {

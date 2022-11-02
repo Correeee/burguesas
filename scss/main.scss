@@ -3,6 +3,12 @@ $blue-green: #219ebcff;
 $selective-yellow: #ffb703ff;
 $tangerine: #fb8500ff;
 
+@mixin flex($display, $direction, $wrap){
+    display: $display;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -105,8 +111,7 @@ header{
 /* INICIO */
 
 .carousel{
-    display: flex;
-    flex-direction: column;
+    @include flex(flex, column, nowrap);
     justify-content: center;
     align-content: center;
     height: 75vh;
@@ -132,8 +137,7 @@ header{
 /* FOOTER */
 
 footer{
-    display: flex;
-    flex-direction: row;
+    @include flex(flex, row, nowrap);
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -184,13 +188,11 @@ footer{
 /* NOSOTROS */
 
 .principal__nosotros{
-    display: flex;
-    flex-direction: row;
+    @include flex(flex, row, wrap);
     justify-content: space-evenly;
     align-content: center;
     justify-items: center;
     align-items: center;
-    flex-wrap: wrap;
     text-align: center;
     margin-top: 13rem;
     .div__textonosotros{
@@ -325,9 +327,7 @@ footer{
         animation-direction:alternate;
     }
     .div__contacto{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        @include flex(flex, row, wrap);
         justify-content: space-evenly;
         margin: 8rem;
         .mapa__insert{
@@ -336,10 +336,13 @@ footer{
                 font-size: large;
                 font-weight: bold;
             }
+            .mapa__imagen{
+                width: 50rem;
+                height: 35rem;
+            }
         }
         .formulario{
-            display: flex;
-            flex-direction: column;
+            @include flex(flex, column, nowrap);
             font-size: 2.5rem;
             text-align: center;
             justify-items: center;
