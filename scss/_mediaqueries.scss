@@ -24,8 +24,10 @@
         }
     }
     
-
     .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .menu__producto{
             display: inline-block;
             text-align: center;
@@ -39,6 +41,7 @@
         }
     }
 }
+
 
 /* LAPTOP */
 
@@ -56,7 +59,6 @@
         }
     }
 
-
     .navbar{
         .container-fluid{
             .collapse{
@@ -69,8 +71,6 @@
         }
     }
 
- /* menu */
-
     .menu{
         .menu__producto{
             .productoimg{
@@ -78,17 +78,18 @@
         }
     }
 
-    .galeria{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        .foto{
-            width: 21rem;
-            height: 21rem;
+    .principal__galeria{
+        .galeria{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .foto{
+                width: 21rem;
+                height: 21rem;
+            }
         }
     }
-
 
     .principal__producto{
         margin-top: 3rem;
@@ -123,7 +124,6 @@
     }
 }
 
-
 /* TABLET */
 
 @media screen and (max-width: 768px){
@@ -140,23 +140,21 @@
         }
     }
 
-/* nosotros */
     .principal__nosotros{
         flex-direction:column;
         margin-top: 4rem;
-    }
-    .sobrenosotros{
-        width: 50rem;
-        height: 30rem;
+        .div__textonosotros{
+            text-align: center;
+            width: 95%;
+        }
+        .div__imagennosotros{
+            .sobrenosotros{
+                width: 50rem;
+                height: 30rem;
+            }
+        }
     }
 
-    .div__textonosotros{
-        text-align: center;
-        width: 95%;
-    }
-/* menu */
-
-/* galeria */
 
     .galeria{
         display: flex;
@@ -165,10 +163,10 @@
         justify-content: space-evenly;
     }
 
-/* contacto */
     .div__contacto{
     margin-top: 6rem;
     }
+
 }
 
 /* CELULAR */
@@ -200,8 +198,6 @@
         }
     }
 
-/* menu */
-
     .menu{
         .menu__producto{
             .menu_texto{
@@ -211,8 +207,6 @@
             }
         }
     }
-
-/* contacto */
 
     .principal__contacto{
         .div__contacto{
@@ -235,8 +229,6 @@
             }
         }
     }
-
-/* footer */
 
     .footer{
         .div__ubicacion{
