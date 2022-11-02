@@ -54,10 +54,8 @@ body {
 
 /* HEADER (Si pongo la anidacion del .navbar en el header: se rompe el nav. */
 
-.header{
+header{
     width: 100%;
-}
-
     .navbar{
         padding: 0;
         .container-fluid{
@@ -100,6 +98,9 @@ body {
             }
         }
     }
+}
+
+
 
 /* INICIO */
 
