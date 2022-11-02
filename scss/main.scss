@@ -52,7 +52,7 @@ body {
     }
 }
 
-/* HEADER (Si pongo la anidacion del .navbar en el header: se rompe el nav. */
+/* HEADER*/
 
 header{
     width: 100%;
@@ -387,3 +387,30 @@ footer{
 }
 
 @import "mediaqueries";
+
+$borde:(
+    1:solid white 5px,
+    2:solid black 5px,
+    3:solid white 5px,
+    4:solid black 5px,
+    5:solid white 5px,
+    6:solid black 5px,
+    7:solid white 5px,
+    8:solid black 5px,
+    9:solid white 5px,
+    10:solid black 5px,
+);
+
+@each $numero, $color in $borde{
+    #foto-#{$numero}{
+        border: $color;
+    }
+    #productoimg-#{$numero}{
+        border: $color;
+    }   
+}
+
+
+
+
+

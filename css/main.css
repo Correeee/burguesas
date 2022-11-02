@@ -40,7 +40,7 @@ body {
     width: 7rem;
     height: 7rem; }
 
-/* HEADER (Si pongo la anidacion del .navbar en el header: se rompe el nav. */
+/* HEADER*/
 header {
   width: 100%; }
   header .navbar {
@@ -411,3 +411,63 @@ footer {
   footer .copyright {
     text-align: center;
     font-size: 1.1rem; } }
+
+#foto-1 {
+  border: solid white 5px; }
+
+#productoimg-1 {
+  border: solid white 5px; }
+
+#foto-2 {
+  border: solid black 5px; }
+
+#productoimg-2 {
+  border: solid black 5px; }
+
+#foto-3 {
+  border: solid white 5px; }
+
+#productoimg-3 {
+  border: solid white 5px; }
+
+#foto-4 {
+  border: solid black 5px; }
+
+#productoimg-4 {
+  border: solid black 5px; }
+
+#foto-5 {
+  border: solid white 5px; }
+
+#productoimg-5 {
+  border: solid white 5px; }
+
+#foto-6 {
+  border: solid black 5px; }
+
+#productoimg-6 {
+  border: solid black 5px; }
+
+#foto-7 {
+  border: solid white 5px; }
+
+#productoimg-7 {
+  border: solid white 5px; }
+
+#foto-8 {
+  border: solid black 5px; }
+
+#productoimg-8 {
+  border: solid black 5px; }
+
+#foto-9 {
+  border: solid white 5px; }
+
+#productoimg-9 {
+  border: solid white 5px; }
+
+#foto-10 {
+  border: solid black 5px; }
+
+#productoimg-10 {
+  border: solid black 5px; }
