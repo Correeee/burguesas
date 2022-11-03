@@ -372,7 +372,7 @@ footer {
       margin-right: 0rem; } }
 
 /* TABLET */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .wsp {
     bottom: 10%;
     left: 85%;
@@ -403,7 +403,6 @@ footer {
       font-size: large; }
   .principal__contacto .div__contacto .mapa__insert .mapa__imagen {
     width: 35rem; }
-  /* footer */
   footer .div__ubicacion .titulomapa {
     font-size: 1.1rem;
     font-weight: bold;
@@ -419,6 +418,36 @@ footer {
   footer .copyright {
     text-align: center;
     font-size: 1.1rem; } }
+
+/* 320px */
+@media screen and (max-width: 320px) {
+  .principal__contacto .div__contacto .formulario {
+    margin-bottom: 5rem;
+    margin-right: 0rem; }
+    .principal__contacto .div__contacto .formulario .mb-3 {
+      width: 30rem; }
+    .principal__contacto .div__contacto .formulario .form-check .form-check-label {
+      font-size: 1.4rem; }
+  .principal__contacto .div__contacto .mapa__insert .mapa__imagen {
+    width: 30rem; }
+  .wsp .wsp__texto {
+    font-size: 1rem; }
+  .wsp .wsp__img {
+    width: 4rem;
+    height: 4rem; }
+  .principal__nosotros .div__textonosotros {
+    text-align: center;
+    width: 90%; }
+  .principal__nosotros .div__imagennosotros .sobrenosotros {
+    width: 30rem;
+    height: 20rem; }
+  footer .div__ubicacion .mapa {
+    width: 2.3rem; }
+  footer .div__redes .redes {
+    width: 2.3rem; }
+  footer .copyright {
+    text-align: center;
+    font-size: 0.9rem; } }
 
 #foto-1 {
   border: solid white 5px; }

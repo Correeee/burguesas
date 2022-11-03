@@ -133,7 +133,7 @@
 
 /* TABLET */
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 768px){
     .wsp{
         bottom: 10%;
         left: 85%;
@@ -195,8 +195,6 @@
         }
     }
 
-/* footer */
-
     footer{
         .div__ubicacion{
             .titulomapa {
@@ -221,6 +219,73 @@
         .copyright{
             text-align: center;
             font-size: 1.1rem;
+        }
+    }
+}
+
+/* 320px */
+
+@media screen and (max-width: 320px){
+
+    .principal__contacto{
+        .div__contacto{
+            .formulario{
+                margin-bottom: 5rem;
+                margin-right: 0rem;
+                .mb-3{
+                    width: 30rem;
+                }
+                .form-check{
+                    .form-check-label{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            .mapa__insert{
+                .mapa__imagen{
+                    width: 30rem;
+                }
+            }
+        }
+    }
+
+    .wsp{
+        .wsp__texto{
+            font-size: 1rem;
+        }
+        .wsp__img{
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+
+    .principal__nosotros{
+        .div__textonosotros{
+            text-align: center;
+            width: 90%;
+        }
+        .div__imagennosotros{
+            .sobrenosotros{
+                width: 30rem;
+                height: 20rem;
+            }
+        }
+    }
+
+    footer{
+        .div__ubicacion{
+            .mapa {
+                width: 2.3rem;
+            }
+        }
+        .div__redes{
+            .redes {
+                width: 2.3rem;
+            }
+        }
+        .copyright{
+            text-align: center;
+            font-size: 0.9rem;
         }
     }
 }
