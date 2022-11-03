@@ -200,7 +200,8 @@ footer {
     margin-top: 2rem;
     object-fit: cover;
     object-position: bottom;
-    border: solid white 3px; }
+    border: solid white 3px;
+    border-radius: 5px; }
   .principal__producto .menu .menu__producto .menu_texto {
     display: inline-block;
     text-align: center;
@@ -241,7 +242,8 @@ footer {
     margin: 1.8rem 0;
     width: 26rem;
     height: 26rem;
-    border: solid white 3px; }
+    border: solid white 3px;
+    border-radius: 5px; }
     .principal__galeria .galeria .foto:hover {
       transform: scale(1.2); }
     .principal__galeria .galeria .foto img {
@@ -308,9 +310,9 @@ footer {
 
 @keyframes h2 {
   from {
-    transform: rotate(14deg); }
+    transform: rotate(15deg); }
   to {
-    transform: rotate(-14deg); } }
+    transform: rotate(-15deg); } }
 
 /* LAPTOP L */
 @media screen and (max-width: 1440px) {
@@ -421,7 +423,9 @@ footer {
     font-weight: bold;
     text-align: center; }
   footer .div__ubicacion .mapa {
-    width: 4rem; } }
+    width: 4rem; }
+  .principal h1 {
+    font-size: 2rem; } }
 
 /*MOBILE L*/
 @media screen and (max-width: 425px) {
@@ -434,9 +438,7 @@ footer {
   footer .div__redes .redes {
     width: 2.5rem; }
   footer .copyright {
-    font-size: 1.2rem; }
-  .principal h1 {
-    font-size: 2rem; } }
+    font-size: 1.2rem; } }
 
 /*MOBILE M*/
 @media screen and (max-width: 425px) {

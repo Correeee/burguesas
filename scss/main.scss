@@ -214,7 +214,7 @@ footer{
             margin-top: 0rem;
             margin-bottom: 3rem;
             animation: h2 1.5s infinite linear;
-            animation-direction:alternate
+            animation-direction:alternate;
         }
         p{
             font-size: 2rem;
@@ -241,7 +241,7 @@ footer{
         margin-top: 3rem;
         margin-bottom: 2.5rem;
         animation: h2 1.5s infinite linear;
-        animation-direction:alternate
+        animation-direction:alternate;
     }
     .menu{
         .menu__producto{
@@ -257,6 +257,7 @@ footer{
                 object-fit: cover;
                 object-position: bottom;
                 border: solid white 3px;
+                border-radius: 5px;
             }
             .menu_texto{
                 display: inline-block;
@@ -288,7 +289,7 @@ footer{
         margin-top: 3rem;
         margin-bottom: 2rem;
         animation: h2 1.5s infinite linear;
-        animation-direction:alternate
+        animation-direction:alternate;
     }
     .galeria{
         display: grid;
@@ -310,6 +311,7 @@ footer{
             width: 26rem;
             height: 26rem;
             border: solid white 3px;
+            border-radius: 5px;
             &:hover{    
                 transform: scale(1.2);
             }
@@ -391,10 +393,10 @@ footer{
 
 @keyframes h2 {
     from{
-        transform: rotate(14deg);
+        transform: rotate(15deg);
     }
     to{
-        transform: rotate(-14deg);
+        transform: rotate(-15deg);
     }
 }
 
