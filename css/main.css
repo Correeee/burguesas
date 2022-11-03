@@ -147,7 +147,7 @@ footer {
   justify-items: center;
   align-items: center;
   text-align: center;
-  margin-top: 13rem; }
+  margin-top: 9rem; }
   .principal__nosotros .div__textonosotros {
     text-align: center;
     width: 40%; }
@@ -369,7 +369,12 @@ footer {
   .principal__contacto .div__contacto {
     margin-top: 6rem; }
     .principal__contacto .div__contacto .formulario {
-      margin-right: 0rem; } }
+      margin-right: 0rem; }
+  .principal__nosotros {
+    margin-top: 5rem; }
+    .principal__nosotros .div__textonosotros {
+      text-align: center;
+      width: 50%; } }
 
 /* TABLET */
 @media screen and (max-width: 768px) {
@@ -408,18 +413,35 @@ footer {
     font-weight: bold;
     text-align: center; }
   footer .div__ubicacion .mapa {
+    width: 4rem; } }
+
+/*MOBILE L*/
+@media screen and (max-width: 425px) {
+  footer .div__ubicacion .titulomapa {
+    font-size: 1.5rem; }
+  footer .div__ubicacion .mapa {
     width: 2.5rem; }
   footer .div__redes .tituloredes {
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-align: center; }
+    font-size: 1.5rem; }
   footer .div__redes .redes {
     width: 2.5rem; }
   footer .copyright {
-    text-align: center;
+    font-size: 1.2rem; } }
+
+/*MOBILE M*/
+@media screen and (max-width: 425px) {
+  footer .div__ubicacion .titulomapa {
+    font-size: 1rem; }
+  footer .div__ubicacion .mapa {
+    width: 2.5rem; }
+  footer .div__redes .tituloredes {
+    font-size: 1rem; }
+  footer .div__redes .redes {
+    width: 2.5rem; }
+  footer .copyright {
     font-size: 1.1rem; } }
 
-/* 320px */
+/* MOBILE S */
 @media screen and (max-width: 320px) {
   .principal__contacto .div__contacto .formulario {
     margin-bottom: 5rem;
@@ -435,12 +457,14 @@ footer {
   .wsp .wsp__img {
     width: 4rem;
     height: 4rem; }
-  .principal__nosotros .div__textonosotros {
-    text-align: center;
-    width: 90%; }
-  .principal__nosotros .div__imagennosotros .sobrenosotros {
-    width: 30rem;
-    height: 20rem; }
+  .principal__nosotros {
+    margin-top: 3rem; }
+    .principal__nosotros .div__textonosotros {
+      text-align: center;
+      width: 90%; }
+    .principal__nosotros .div__imagennosotros .sobrenosotros {
+      width: 30rem;
+      height: 20rem; }
   footer .div__ubicacion .mapa {
     width: 2.3rem; }
   footer .div__redes .redes {
@@ -450,61 +474,61 @@ footer {
     font-size: 0.9rem; } }
 
 #foto-1 {
-  border: solid white 5px; }
+  border: solid white 8px; }
 
 #productoimg-1 {
-  border: solid white 5px; }
+  border: solid white 8px; }
 
 #foto-2 {
-  border: solid black 5px; }
+  border: solid black 8px; }
 
 #productoimg-2 {
-  border: solid black 5px; }
+  border: solid black 8px; }
 
 #foto-3 {
-  border: solid white 5px; }
+  border: solid white 8px; }
 
 #productoimg-3 {
-  border: solid white 5px; }
+  border: solid white 8px; }
 
 #foto-4 {
-  border: solid black 5px; }
+  border: solid black 8px; }
 
 #productoimg-4 {
-  border: solid black 5px; }
+  border: solid black 8px; }
 
 #foto-5 {
-  border: solid white 5px; }
+  border: solid white 8px; }
 
 #productoimg-5 {
-  border: solid white 5px; }
+  border: solid white 8px; }
 
 #foto-6 {
-  border: solid black 5px; }
+  border: solid black 8px; }
 
 #productoimg-6 {
-  border: solid black 5px; }
+  border: solid black 8px; }
 
 #foto-7 {
-  border: solid white 5px; }
+  border: solid white 8px; }
 
 #productoimg-7 {
-  border: solid white 5px; }
+  border: solid white 8px; }
 
 #foto-8 {
-  border: solid black 5px; }
+  border: solid black 8px; }
 
 #productoimg-8 {
-  border: solid black 5px; }
+  border: solid black 8px; }
 
 #foto-9 {
-  border: solid white 5px; }
+  border: solid white 8px; }
 
 #productoimg-9 {
-  border: solid white 5px; }
+  border: solid white 8px; }
 
 #foto-10 {
-  border: solid black 5px; }
+  border: solid black 8px; }
 
 #productoimg-10 {
-  border: solid black 5px; }
+  border: solid black 8px; }
