@@ -227,6 +227,20 @@
 /*MOBILE L*/
 
 @media screen and (max-width: 425px){
+
+    header{
+        .navbar{
+            .container-fluid{
+                a{
+                    .logo{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+
     footer{
         .div__ubicacion{
             .titulomapa {
