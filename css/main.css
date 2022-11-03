@@ -147,6 +147,11 @@ footer {
 
 /* NOSOTROS */
 .principal__nosotros {
+  background-image: url(../multimedia/papasfritas.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-attachment: scroll;
+  background-size: 32rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -169,144 +174,162 @@ footer {
       animation-direction: alternate; }
     .principal__nosotros .div__textonosotros p {
       font-size: 2rem;
-      font-weight: 200;
+      font-weight: bold;
       margin-bottom: 2.5rem; }
   .principal__nosotros .sobrenosotros {
-    border: solid white 4px;
+    border: solid white 8px;
+    border-radius: 5px;
     object-fit: cover;
     margin-bottom: 1rem;
     width: 45rem;
     height: 40rem; }
 
 /* PRODUCTOS */
-.principal__producto .titulo__menu {
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 2.5rem;
-  animation: h2 1.5s infinite linear;
-  animation-direction: alternate; }
-
-.principal__producto .menu .menu__producto {
-  display: inline-block;
-  text-align: center;
-  width: 80rem;
-  margin: 4rem 7rem; }
-  .principal__producto .menu .menu__producto .productoimg {
-    width: 24rem;
-    height: 24rem;
-    margin-right: 3rem;
-    margin-top: 2rem;
-    object-fit: cover;
-    object-position: bottom;
-    border: solid white 3px;
-    border-radius: 5px; }
-  .principal__producto .menu .menu__producto .menu_texto {
-    display: inline-block;
+.principal__producto {
+  background-image: url(../multimedia/aderezo.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: scroll;
+  background-size: 25rem; }
+  .principal__producto .titulo__menu {
+    font-size: 3rem;
+    font-weight: bold;
     text-align: center;
-    width: 48rem; }
-    .principal__producto .menu .menu__producto .menu_texto .titulo__producto {
-      font-weight: bold;
-      font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    animation: h2 1.5s infinite linear;
+    animation-direction: alternate; }
+  .principal__producto .menu {
+    text-align: center; }
+    .principal__producto .menu .menu__producto {
+      display: inline-block;
       text-align: center;
-      margin-top: 2rem;
-      margin-bottom: 2.5rem; }
-    .principal__producto .menu .menu__producto .menu_texto .descripcion_producto {
-      font-size: large; }
+      width: 80rem;
+      margin: 4rem 7rem; }
+      .principal__producto .menu .menu__producto .productoimg {
+        width: 24rem;
+        height: 24rem;
+        margin-right: 3rem;
+        margin-top: 2rem;
+        object-fit: cover;
+        object-position: bottom;
+        border: solid white 3px;
+        border-radius: 5px; }
+      .principal__producto .menu .menu__producto .menu_texto {
+        display: inline-block;
+        text-align: center;
+        width: 48rem; }
+        .principal__producto .menu .menu__producto .menu_texto .titulo__producto {
+          font-weight: bold;
+          font-size: 2rem;
+          text-align: center;
+          margin-top: 2rem;
+          margin-bottom: 2.5rem; }
+        .principal__producto .menu .menu__producto .menu_texto .descripcion_producto {
+          font-size: large; }
 
 /* GALERIA */
-.principal__galeria .titulo__galeria {
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  animation: h2 1.5s infinite linear;
-  animation-direction: alternate; }
-
-.principal__galeria .galeria {
-  display: grid;
-  grid-template-columns: 4 1fr;
-  grid-template-rows: 2 1fr;
-  grid-template-areas: "foto foto foto foto" "foto foto foto foto";
-  justify-items: center;
-  align-items: center;
-  justify-content: space-evenly;
-  align-content: space-around;
-  margin-bottom: 1rem;
-  gap: 1rem; }
-  .principal__galeria .galeria .foto {
-    justify-self: center;
-    align-items: center;
-    margin: 1.8rem 0;
-    width: 26rem;
-    height: 26rem;
-    border: solid white 3px;
-    border-radius: 5px; }
-    .principal__galeria .galeria .foto:hover {
-      transform: scale(1.2); }
-    .principal__galeria .galeria .foto img {
-      text-align: center;
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-
-/* CONTACTO */
-.principal__contacto .titulo__contacto {
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 2.5rem;
-  animation: h2 1.5s infinite linear;
-  animation-direction: alternate; }
-
-.principal__contacto .div__contacto {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 8rem; }
-  .principal__contacto .div__contacto .mapa__insert .mapa__inserttitulo {
+.principal__galeria {
+  background-image: url(../multimedia/gaseosa.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: 50rem; }
+  .principal__galeria .titulo__galeria {
+    font-size: 3rem;
+    font-weight: bold;
     text-align: center;
-    font-size: large;
-    font-weight: bold; }
-  .principal__contacto .div__contacto .mapa__insert .mapa__imagen {
-    width: 50rem;
-    height: 35rem; }
-  .principal__contacto .div__contacto .formulario {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    font-size: 2.5rem;
-    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    animation: h2 1.5s infinite linear;
+    animation-direction: alternate; }
+  .principal__galeria .galeria {
+    display: grid;
+    grid-template-columns: 4 1fr;
+    grid-template-rows: 2 1fr;
+    grid-template-areas: "foto foto foto foto" "foto foto foto foto";
     justify-items: center;
     align-items: center;
-    margin-bottom: 3rem;
-    margin-right: 2rem; }
-    .principal__contacto .div__contacto .formulario .mb-3 {
-      width: 50rem; }
-      .principal__contacto .div__contacto .formulario .mb-3 .form-control {
-        font-size: large;
+    justify-content: space-evenly;
+    align-content: space-around;
+    margin-bottom: 1rem;
+    gap: 1rem; }
+    .principal__galeria .galeria .foto {
+      justify-self: center;
+      align-items: center;
+      margin: 1.8rem 0;
+      width: 26rem;
+      height: 26rem;
+      border: solid white 3px;
+      border-radius: 5px; }
+      .principal__galeria .galeria .foto:hover {
+        transform: scale(1.2); }
+      .principal__galeria .galeria .foto img {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+/* CONTACTO */
+.principal__contacto {
+  background-image: url(../multimedia/hamburguesa.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-attachment: scroll;
+  background-size: 40rem; }
+  .principal__contacto .titulo__contacto {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    animation: h2 1.5s infinite linear;
+    animation-direction: alternate; }
+  .principal__contacto .div__contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 8rem; }
+    .principal__contacto .div__contacto .mapa__insert .mapa__inserttitulo {
+      text-align: center;
+      font-size: large;
+      font-weight: bold; }
+    .principal__contacto .div__contacto .mapa__insert .mapa__imagen {
+      width: 50rem;
+      height: 35rem; }
+    .principal__contacto .div__contacto .formulario {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      font-size: 2.5rem;
+      text-align: center;
+      justify-items: center;
+      align-items: center;
+      margin-bottom: 3rem;
+      margin-right: 2rem; }
+      .principal__contacto .div__contacto .formulario .mb-3 {
+        width: 50rem; }
+        .principal__contacto .div__contacto .formulario .mb-3 .form-control {
+          font-size: large;
+          font-weight: bold;
+          text-align: center; }
+        .principal__contacto .div__contacto .formulario .mb-3 .textarea {
+          text-align: start;
+          overflow: auto;
+          resize: none; }
+      .principal__contacto .div__contacto .formulario .btn {
+        width: 10rem;
+        font-size: 2rem;
+        margin-top: 4rem;
+        background-color: #fb8500ff;
+        border-color: black;
+        color: black;
         font-weight: bold;
-        text-align: center; }
-      .principal__contacto .div__contacto .formulario .mb-3 .textarea {
-        text-align: start;
-        overflow: auto;
-        resize: none; }
-    .principal__contacto .div__contacto .formulario .btn {
-      width: 10rem;
-      font-size: 2rem;
-      margin-top: 4rem;
-      background-color: #fb8500ff;
-      border-color: black;
-      color: black;
-      font-weight: bold;
-      transition: 0.6s; }
-      .principal__contacto .div__contacto .formulario .btn:hover {
-        background-color: #219ebcff;
-        border: solid black 1px; }
+        transition: 0.6s; }
+        .principal__contacto .div__contacto .formulario .btn:hover {
+          background-color: #219ebcff;
+          border: solid black 1px; }
 
 @keyframes h2 {
   from {
@@ -376,11 +399,15 @@ footer {
         .principal__producto .menu .menu__producto .menu_texto .descripcion_producto {
           margin-bottom: 1rem;
           margin-top: 0; }
-  .principal__contacto .div__contacto {
-    margin-top: 6rem; }
-    .principal__contacto .div__contacto .formulario {
-      margin-right: 0rem; }
+  .principal__contacto {
+    background-position: left;
+    background-size: 33rem; }
+    .principal__contacto .div__contacto {
+      margin-top: 6rem; }
+      .principal__contacto .div__contacto .formulario {
+        margin-right: 0rem; }
   .principal__nosotros {
+    background-image: none;
     margin-top: 5rem; }
     .principal__nosotros .div__textonosotros {
       text-align: center;
@@ -398,34 +425,32 @@ footer {
       width: 5rem;
       height: 5rem; }
   .principal__nosotros {
+    background-image: none;
     margin-top: 3rem; }
     .principal__nosotros .div__textonosotros {
       text-align: center;
       width: 95%; }
-    .principal__nosotros .div__imagennosotros .sobrenosotros {
-      width: 36rem;
-      height: 26rem; }
   .principal__producto .menu .menu__producto .menu_texto {
     margin-bottom: 1rem;
     margin-top: 0;
     width: 95%; }
-  .principal__contacto .div__contacto .formulario {
-    margin-bottom: 5rem;
-    margin-right: 0rem; }
-    .principal__contacto .div__contacto .formulario .mb-3 {
+  .principal__contacto {
+    background-size: 30rem; }
+    .principal__contacto .div__contacto .formulario {
+      margin-bottom: 5rem;
+      margin-right: 0rem; }
+      .principal__contacto .div__contacto .formulario .mb-3 {
+        width: 35rem; }
+      .principal__contacto .div__contacto .formulario .form-check .form-check-label {
+        font-size: large; }
+    .principal__contacto .div__contacto .mapa__insert .mapa__imagen {
       width: 35rem; }
-    .principal__contacto .div__contacto .formulario .form-check .form-check-label {
-      font-size: large; }
-  .principal__contacto .div__contacto .mapa__insert .mapa__imagen {
-    width: 35rem; }
-  footer .div__ubicacion .titulomapa {
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-align: center; }
   footer .div__ubicacion .mapa {
     width: 4rem; }
   .principal h1 {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .principal__galeria {
+    background-position: center bottom; } }
 
 /*MOBILE L*/
 @media screen and (max-width: 425px) {
@@ -441,7 +466,16 @@ footer {
   footer .div__redes .redes {
     width: 2.5rem; }
   footer .copyright {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .principal__nosotros .div__imagennosotros .sobrenosotros {
+    width: 36rem;
+    height: 26rem; }
+  .principal__contacto {
+    background-image: none; }
+  .principal__galeria {
+    background-image: none; }
+  .principal__producto {
+    background-image: none; } }
 
 /*MOBILE M*/
 @media screen and (max-width: 425px) {

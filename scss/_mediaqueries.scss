@@ -122,6 +122,8 @@
     }
 
     .principal__contacto{
+        background-position: left;
+        background-size: 33rem;
         .div__contacto{
             margin-top: 6rem;
             .formulario{
@@ -131,6 +133,7 @@
     }
 
     .principal__nosotros{
+        background-image: none;
         margin-top: 5rem;
         .div__textonosotros{
             text-align: center;
@@ -157,16 +160,11 @@
     }
 
     .principal__nosotros{
+        background-image: none;
         margin-top: 3rem;
         .div__textonosotros{
             text-align: center;
             width: 95%;
-        }
-        .div__imagennosotros{
-            .sobrenosotros{
-                width: 36rem;
-                height: 26rem;
-            }
         }
     }
 
@@ -183,6 +181,7 @@
     }
 
     .principal__contacto{
+        background-size: 30rem;
         .div__contacto{
             .formulario{
                 margin-bottom: 5rem;
@@ -206,11 +205,6 @@
 
     footer{
         .div__ubicacion{
-            .titulomapa {
-                font-size: 1.1rem;
-                font-weight: bold;
-                text-align: center;
-            }
             .mapa {
                 width: 4rem;
             }
@@ -221,6 +215,10 @@
         h1{
             font-size: 2rem;
         }
+    }
+
+    .principal__galeria{
+        background-position: center bottom;
     }
 }
 
@@ -261,6 +259,27 @@
         .copyright{
             font-size: 1.2rem;
         }
+    }
+
+    .principal__nosotros{
+        .div__imagennosotros{
+            .sobrenosotros{
+                width: 36rem;
+                height: 26rem;
+            }
+        }
+    }
+
+    .principal__contacto{
+        background-image: none;
+    }
+
+    .principal__galeria{
+        background-image: none;
+    }
+
+    .principal__producto{
+        background-image: none;
     }
 }
 

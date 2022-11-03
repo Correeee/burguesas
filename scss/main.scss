@@ -197,6 +197,11 @@ footer{
 /* NOSOTROS */
 
 .principal__nosotros{
+    background-image: url(../multimedia/papasfritas.png);
+    background-repeat:no-repeat;
+    background-position: left bottom;
+    background-attachment: scroll;
+    background-size: 32rem;
     @include flex(flex, row, wrap);
     justify-content: space-evenly;
     align-content: center;
@@ -218,12 +223,13 @@ footer{
         }
         p{
             font-size: 2rem;
-            font-weight:200;
+            font-weight:bold;
             margin-bottom: 2.5rem;
         }
     }
     .sobrenosotros{
-        border: solid white 4px;
+        border: solid white 8px;
+        border-radius: 5px;
         object-fit:cover;
         margin-bottom: 1rem;
         width: 45rem;
@@ -234,6 +240,11 @@ footer{
 /* PRODUCTOS */
 
 .principal__producto{
+    background-image: url(../multimedia/aderezo.png);
+    background-repeat:no-repeat;
+    background-position: left top;
+    background-attachment: scroll;
+    background-size: 25rem;
     .titulo__menu{
         font-size: 3rem;
         font-weight: bold;
@@ -244,6 +255,7 @@ footer{
         animation-direction:alternate;
     }
     .menu{
+        text-align: center;
         .menu__producto{
             display: inline-block;
             text-align: center;
@@ -282,6 +294,11 @@ footer{
 /* GALERIA */
 
 .principal__galeria{
+    background-image: url(../multimedia/gaseosa.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: 50rem;
     .titulo__galeria{
         font-size: 3rem;
         font-weight: bold;
@@ -328,6 +345,11 @@ footer{
 /* CONTACTO */
 
 .principal__contacto{
+    background-image: url(../multimedia/hamburguesa.png);
+    background-repeat:no-repeat;
+    background-position: left bottom;
+    background-attachment: scroll;
+    background-size: 40rem;
     .titulo__contacto{
         font-size: 3rem;
         font-weight: bold;
