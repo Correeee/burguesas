@@ -74,24 +74,32 @@ header {
             margin: auto auto; }
 
 /* INICIO */
-.carousel {
+.principal h1 {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #99582aff;
+  color: #ffb703ff; }
+
+.principal .carousel {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-content: center;
-  height: 75vh;
+  height: 70vh;
   width: 100vw; }
-  .carousel .carousel-control-next-icon {
+  .principal .carousel .carousel-control-next-icon {
     width: 5rem;
     height: 5rem; }
-  .carousel .carousel-control-prev-icon {
+  .principal .carousel .carousel-control-prev-icon {
     width: 5rem;
     height: 5rem; }
-  .carousel .visually-hidden {
+  .principal .carousel .visually-hidden {
     width: 20rem;
     height: 20rem; }
-  .carousel .d-block {
+  .principal .carousel .d-block {
     height: 60rem;
     object-fit: contain; }
 
@@ -426,7 +434,9 @@ footer {
   footer .div__redes .redes {
     width: 2.5rem; }
   footer .copyright {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .principal h1 {
+    font-size: 2rem; } }
 
 /*MOBILE M*/
 @media screen and (max-width: 425px) {

@@ -2,6 +2,7 @@
 $blue-green: #219ebcff;
 $selective-yellow: #ffb703ff;
 $tangerine: #fb8500ff;
+$windsor-tan: #99582aff;
 
 @mixin flex($display, $direction, $wrap){
     display: $display;
@@ -106,31 +107,39 @@ header{
     }
 }
 
-
-
 /* INICIO */
 
-.carousel{
-    @include flex(flex, column, nowrap);
-    justify-content: center;
-    align-content: center;
-    height: 75vh;
-    width: 100vw;
-    .carousel-control-next-icon{
-        width: 5rem;
-        height: 5rem;
+.principal{
+    h1{
+        display: block;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        background-color: $windsor-tan;
+        color: $selective-yellow;
     }
-    .carousel-control-prev-icon{
-        width: 5rem;
-        height: 5rem;
-    }
-    .visually-hidden{
-        width: 20rem;
-        height: 20rem;
-    }
-    .d-block{
-        height: 60rem;
-        object-fit: contain;
+    .carousel{
+        @include flex(flex, column, nowrap);
+        justify-content: center;
+        align-content: center;
+        height: 70vh;
+        width: 100vw;
+        .carousel-control-next-icon{
+            width: 5rem;
+            height: 5rem;
+        }
+        .carousel-control-prev-icon{
+            width: 5rem;
+            height: 5rem;
+        }
+        .visually-hidden{
+            width: 20rem;
+            height: 20rem;
+        }
+        .d-block{
+            height: 60rem;
+            object-fit: contain;
+        }
     }
 }
 
