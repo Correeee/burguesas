@@ -406,18 +406,45 @@
     }
 }
 
+@media screen and (max-width: 1024px) and (orientation: landscape){
+
+    .wsp{
+        bottom: 19%;
+        text-align: center;
+        .wsp__texto{
+            font-size: 1.2rem;
+        }
+        .wsp__img{
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+
+    .principal{
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    .d-block{
+                        height: 27rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 768px) and (orientation: landscape){
 
     .wsp{
-        bottom: 13%;
+        bottom: 18%;
         left: 85%;
         text-align: center;
         .wsp__texto{
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
         .wsp__img{
-            width: 4rem;
-            height: 4rem;
+            width: 5rem;
+            height: 5rem;
         }
     }
 
@@ -435,6 +462,17 @@
 }
 
 @media screen and (max-width: 425px) and (orientation: landscape){
+
+    .wsp{
+        .wsp__texto{
+            font-size: 0.8rem;
+        }
+        .wsp__img{
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+
     .principal{
         .carousel{
             .carousel-inner{
@@ -449,6 +487,20 @@
 }
 
 @media screen and (max-width: 375px) and (orientation: portrait){
+
+    .wsp{
+        bottom: 18%;
+        left: 85%;
+        text-align: center;
+        .wsp__texto{
+            font-size: 0.8rem;
+        }
+        .wsp__img{
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+
     .principal{
         .carousel{
             .carousel-inner{
