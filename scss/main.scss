@@ -218,7 +218,7 @@ footer{
             text-align: center;
             margin-top: 0rem;
             margin-bottom: 3rem;
-            animation: h2 1.5s infinite linear;
+            animation: move 1.5s infinite linear;
             animation-direction:alternate;
         }
         p{
@@ -251,7 +251,7 @@ footer{
         text-align: center;
         margin-top: 3rem;
         margin-bottom: 2.5rem;
-        animation: h2 1.5s infinite linear;
+        animation: move 1.5s infinite linear;
         animation-direction:alternate;
     }
     .menu{
@@ -305,7 +305,7 @@ footer{
         text-align: center;
         margin-top: 3rem;
         margin-bottom: 2rem;
-        animation: h2 1.5s infinite linear;
+        animation: move 1.5s infinite linear;
         animation-direction:alternate;
     }
     .galeria{
@@ -356,7 +356,7 @@ footer{
         text-align: center;
         margin-top: 3rem;
         margin-bottom: 2.5rem;
-        animation: h2 1.5s infinite linear;
+        animation: move 1.5s infinite linear;
         animation-direction:alternate;
     }
     .div__contacto{
@@ -413,7 +413,7 @@ footer{
     }
 }
 
-@keyframes h2 {
+@keyframes move {
     from{
         transform: rotate(15deg);
     }

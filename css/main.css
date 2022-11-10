@@ -170,7 +170,7 @@ footer {
       text-align: center;
       margin-top: 0rem;
       margin-bottom: 3rem;
-      animation: h2 1.5s infinite linear;
+      animation: move 1.5s infinite linear;
       animation-direction: alternate; }
     .principal__nosotros .div__textonosotros p {
       font-size: 2rem;
@@ -197,7 +197,7 @@ footer {
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 2.5rem;
-    animation: h2 1.5s infinite linear;
+    animation: move 1.5s infinite linear;
     animation-direction: alternate; }
   .principal__producto .menu {
     text-align: center; }
@@ -241,7 +241,7 @@ footer {
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 2rem;
-    animation: h2 1.5s infinite linear;
+    animation: move 1.5s infinite linear;
     animation-direction: alternate; }
   .principal__galeria .galeria {
     display: grid;
@@ -283,7 +283,7 @@ footer {
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 2.5rem;
-    animation: h2 1.5s infinite linear;
+    animation: move 1.5s infinite linear;
     animation-direction: alternate; }
   .principal__contacto .div__contacto {
     display: flex;
@@ -331,7 +331,7 @@ footer {
           background-color: #219ebcff;
           border: solid black 1px; }
 
-@keyframes h2 {
+@keyframes move {
   from {
     transform: rotate(15deg); }
   to {
