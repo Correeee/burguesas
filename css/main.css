@@ -411,7 +411,9 @@ footer {
     margin-top: 5rem; }
     .principal__nosotros .div__textonosotros {
       text-align: center;
-      width: 50%; } }
+      width: 50%; }
+  .principal .carousel .carousel-inner .carousel-item .d-block {
+    height: 52rem; } }
 
 /* TABLET */
 @media screen and (max-width: 768px) {

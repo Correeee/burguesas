@@ -141,6 +141,18 @@
         }
     }
     
+    .principal{
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    .d-block{
+                        height: 52rem;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 /* TABLET */
