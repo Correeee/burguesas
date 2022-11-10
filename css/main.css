@@ -343,8 +343,10 @@ footer {
     left: 87%; }
   header .navbar .container-fluid .collapse .navbar-nav li {
     margin: 0 8rem; }
-  .principal__contacto .div__contacto {
-    margin-bottom: 2rem; }
+  .principal__contacto {
+    background-size: 29rem; }
+    .principal__contacto .div__contacto {
+      margin-bottom: 2rem; }
   .menu {
     display: flex;
     flex-direction: column;
