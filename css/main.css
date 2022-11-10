@@ -359,7 +359,9 @@ footer {
       .menu .menu__producto .productoimg {
         width: 25rem;
         height: 25rem;
-        margin-bottom: 1rem; } }
+        margin-bottom: 1rem; }
+  .principal__nosotros {
+    background-size: 24rem; } }
 
 /* LAPTOP */
 @media screen and (max-width: 1024px) {
